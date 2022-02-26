@@ -1,0 +1,12 @@
+# Matrix
+Transpose Matrix
+class Solution:
+    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+        # simple intution is that we will traverse in column and will append values in rows.
+        t=[]
+        for j in range(len(matrix[0])):
+            t.append([])
+            for i in range(len(matrix)):
+                t[j].append(matrix[i][j])
+        return t
+            
